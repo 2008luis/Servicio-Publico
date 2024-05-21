@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="hoteles.css">
+    <title>ExploraHoteles - Encuentra tu lugar perfecto para hospedarte</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <p>Sistema de transporte público</p>
+        </div>
+        <div class="menu">
+            <a href="inicio.html">Inicio</a>
+            <a href="ruta.html">Ruta</a>
+            <a href="flota.html">Flota</a>
+            <a href="contacto.html">Contactos</a>
+            <a href="pqr.html">PQR</a>
+        </div>
+    </div>
+        
+    <section class="hotel-list">
+        <div class="container">
+            <h2>Descubre nuestros hoteles destacados</h2>
+            <div class="grid">
+                <!-- Hotel 1 -->
+                <div class="hotel-card">
+                    <img src="imagenes/hoteles/urban-city-architecture.jpg" alt="Hotel 1">
+                    <div class="hotel-info">
+                        <h3>Hotel Urban City Architecture</h3>
+                        <p class="location">Bogotá, Colombia</p>
+                        <p class="price">$200 / noche</p>
+                        <a href="#popup1" class="btn ver-detalles-btn">Ver Detalles</a>
+                    </div>
+                </div>
+                <div id="popup1" class="popup">
+                    <div class="popup-content">
+                        <h2>Detalles del Hotel Urban City Architecture</h2>
+                        <p>El Hotel Urban City Architecture es un lujoso establecimiento situado en el corazón de Bogotá, que ofrece una experiencia única de alojamiento con vistas impresionantes a la ciudad.</p>
+                        <p><strong>Servicios ofrecidos:</strong></p>
+                        <ul>
+                            <li>Wi-Fi gratuito en todas las áreas</li>
+                            <li>Centro de fitness 24 horas</li>
+                            <li>Piscina cubierta</li>
+                            <li>Servicio de habitaciones</li>
+                            <li>Restaurante gourmet</li>
+                            <li>Spa y centro de bienestar</li>
+                            <li>Servicio de traslado al aeropuerto</li>
+                        </ul>
+                        <p><strong>Habitaciones:</strong></p>
+                        <ul>
+                            <li>Habitaciones Deluxe con vistas a la ciudad</li>
+                            <li>Suites ejecutivas</li>
+                            <li>Habitaciones familiares</li>
+                            <li>Áticos de lujo</li>
+                        </ul>
+                        <p><strong>Precio por noche:</strong> $200</p>
+                        <a href="#" class="close-btn">Cerrar</a>
+                    </div>
+                </div>
+
+                <!-- Hotel 2 -->
+                <div class="hotel-card">
+                    <img src="imagenes/hoteles/hotel2.jpg" alt="Hotel 2">
+                    <div class="hotel-info">
+                        <h3>Hotel Sunset Paradise</h3>
+                        <p class="location">Cartagena, Colombia</p>
+                        <p class="price">$250 / noche</p>
+                        <a href="#popup2" class="btn ver-detalles-btn">Ver Detalles</a>
+                    </div>
+                </div>
+                <div id="popup2" class="popup">
+                    <div class="popup-content">
+                        <h2>Detalles del Hotel Sunset Paradise</h2>
+                        <p>El Hotel Sunset Paradise en Cartagena es conocido por sus impresionantes vistas al mar Caribe y su ambiente relajante.</p>
+                        <p><strong>Servicios ofrecidos:</strong></p>
+                        <ul>
+                            <li>Wi-Fi gratuito</li>
+                            <li>Acceso directo a la playa</li>
+                            <li>Bar en la piscina</li>
+                            <li>Restaurante de cocina local</li>
+                            <li>Spa y masajes</li>
+                            <li>Excursiones y actividades acuáticas</li>
+                        </ul>
+                        <p><strong>Habitaciones:</strong></p>
+                        <ul>
+                            <li>Habitaciones con balcón y vista al mar</li>
+                            <li>Suites de lujo</li>
+                            <li>Habitaciones para parejas</li>
+                        </ul>
+                        <p><strong>Precio por noche:</strong> $250</p>
+                        <a href="#" class="close-btn">Cerrar</a>
+                    </div>
+                </div>
+
+                <!-- Hotel 3 -->
+                <div class="hotel-card">
+                    <img src="imagenes/hoteles/hotel3.jpg" alt="Hotel 3">
+                    <div class="hotel-info">
+                        <h3>Eco Lodge Nature Retreat</h3>
+                        <p class="location">Medellín, Colombia</p>
+                        <p class="price">$180 / noche</p>
+                        <a href="#popup3" class="btn ver-detalles-btn">Ver Detalles</a>
+                    </div>
+                </div>
+                <div id="popup3" class="popup">
+                    <div class="popup-content">
+                        <h2>Detalles del Eco Lodge Nature Retreat</h2>
+                        <p>El Eco Lodge Nature Retreat en Medellín ofrece una experiencia única de conexión con la naturaleza, rodeado de exuberantes jardines y vida silvestre.</p>
+                        <p><strong>Servicios ofrecidos:</strong></p>
+                        <ul>
+                            <li>Wi-Fi en áreas comunes</li>
+                            <li>Senderos para caminatas</li>
+                            <li>Yoga y meditación</li>
+                            <li>Comidas orgánicas</li>
+                            <li>Excursiones ecológicas</li>
+                        </ul>
+                        <p><strong>Habitaciones:</strong></p>
+                        <ul>
+                            <li>Cabañas ecológicas</li>
+                            <li>Habitaciones familiares</li>
+                            <li>Suites privadas</li>
+                        </ul>
+                        <p><strong>Precio por noche:</strong> $180</p>
+                        <a href="#" class="close-btn">Cerrar</a>
+                    </div>
+                </div>
+
+                <!-- Hotel 4 -->
+                <div class="hotel-card">
+                    <img src="imagenes/hoteles/hotel4.jpg" alt="Hotel 4">
+                    <div class="hotel-info">
+                        <h3>Mountain View Resort</h3>
+                        <p class="location">Manizales, Colombia</p>
+                        <p class="price">$220 / noche</p>
+                        <a href="#popup4" class="btn ver-detalles-btn">Ver Detalles</a>
+                    </div>
+                </div>
+                <div id="popup4" class="popup">
+                    <div class="popup-content">
+                        <h2>Detalles del Mountain View Resort</h2>
+                        <p>El Mountain View Resort en Manizales ofrece vistas espectaculares a las montañas y un ambiente sereno para una escapada perfecta.</p>
+                        <p><strong>Servicios ofrecidos:</strong></p>
+                        <ul>
+                            <li>Wi-Fi gratuito</li>
+                            <li>Piscina al aire libre</li>
+                            <li>Centro de fitness</li>
+                            <li>Restaurante con cocina internacional</li>
+                            <li>Spa y centro de bienestar</li>
+                        </ul>
+                        <p><strong>Habitaciones:</strong></p>
+                        <ul>
+                            <li>Habitaciones con vista a la montaña</li>
+                            <li>Suites de lujo</li>
+                            <li>Habitaciones familiares</li>
+                        </ul>
+                        <p><strong>Precio por noche:</strong> $220</p>
+                        <a href="#" class="close-btn">Cerrar</a>
+                    </div>
+                </div>
+
+                <!-- Hotel 5 -->
+                <div class="hotel-card">
+                    <img src="imagenes/hoteles/hotel5.jpg" alt="Hotel 5">
+                    <div class="hotel-info">
+                        <h3>Beachfront Oasis Hotel</h3>
+                        <p class="location">Santa Marta, Colombia</p>
+                        <p class="price">$230 / noche</p>
+                        <a href="#popup5" class="btn ver-detalles-btn">Ver Detalles</a>
+                    </div>
+                </div>
+                <div id="popup5" class="popup">
+                    <div class="popup-content">
+                        <h2>Detalles del Beachfront Oasis Hotel</h2>
+                        <p>El Beachfront Oasis Hotel en Santa Marta es un paraíso frente al mar con todas las comodidades para unas vacaciones perfectas.</p>
+                        <p><strong>Servicios ofrecidos:</strong></p>
+                        <ul>
+                            <li>Wi-Fi gratuito</li>
+                            <li>Piscina con bar</li>
+                            <li>Acceso privado a la playa</li>
+                            <li>Restaurante con especialidades del mar</li>
+                            <li>Actividades acuáticas</li>
+                        </ul>
+                        <p><strong>Habitaciones:</strong></p>
+                        <ul>
+                            <li>Habitaciones con vista al mar</li>
+                            <li>Suites de lujo</li>
+                            <li>Habitaciones familiares</li>
+                        </ul>
+                        <p><strong>Precio por noche:</strong> $230</p>
+                        <a href="#" class="close-btn">Cerrar</a>
+                    </div>
+                </div>
+
+                <!-- Hotel 6 -->
+                <div class="hotel-card">
+                    <img src="imagenes/hoteles/hotel6.jpg" alt="Hotel 6">
+                    <div class="hotel-info">
+                        <h3>Colonial Charm Hotel</h3>
+                        <p class="location">Popayán, Colombia</p>
+                        <p class="price">$190 / noche</p>
+                        <a href="#popup6" class="btn ver-detalles-btn">Ver Detalles</a>
+                    </div>
+                </div>
+                <div id="popup6" class="popup">
+                    <div class="popup-content">
+                        <h2>Detalles del Colonial Charm Hotel</h2>
+                        <p>El Colonial Charm Hotel en Popayán ofrece una experiencia de alojamiento encantadora con su arquitectura colonial y servicios modernos.</p>
+                        <p><strong>Servicios ofrecidos:</strong></p>
+                        <ul>
+                            <li>Wi-Fi gratuito</li>
+                            <li>Patio central</li>
+                            <li>Restaurante de cocina local</li>
+                            <li>Centro de conferencias</li>
+                            <li>Excursiones históricas</li>
+                        </ul>
+                        <p><strong>Habitaciones:</strong></p>
+                        <ul>
+                            <li>Habitaciones coloniales</li>
+                            <li>Suites históricas</li>
+                            <li>Habitaciones familiares</li>
+                        </ul>
+                        <p><strong>Precio por noche:</strong> $190</p>
+                        <a href="#" class="close-btn">Cerrar</a>
+                    </div>
+                </div>
+
+                <!-- Hotel 7 -->
+                <div class="hotel-card">
+                    <img src="imagenes/hoteles/hotel7.jpg" alt="Hotel 7">
+                    <div class="hotel-info">
+                        <h3>Luxury Riverside Hotel</h3>
+                        <p class="location">Leticia, Colombia</p>
+                        <p class="price">$240 / noche</p>
+                        <a href="#popup7" class="btn ver-detalles-btn">Ver Detalles</a>
+                    </div>
+                </div>
+                <div id="popup7" class="popup">
+                    <div class="popup-content">
+                        <h2>Detalles del Luxury Riverside Hotel</h2>
+                        <p>El Luxury Riverside Hotel en Leticia ofrece una experiencia única en la Amazonía colombiana, combinando lujo y naturaleza.</p>
+                        <p><strong>Servicios ofrecidos:</strong></p>
+                        <ul>
+                            <li>Wi-Fi gratuito</li>
+                            <li>Excursiones en la selva</li>
+                            <li>Bar en la piscina</li>
+                            <li>Restaurante gourmet</li>
+                            <li>Spa y centro de bienestar</li>
+                        </ul>
+                        <p><strong>Habitaciones:</strong></p>
+                        <ul>
+                            <li>Habitaciones con vista al río</li>
+                            <li>Suites de lujo</li>
+                            <li>Habitaciones familiares</li>
+                        </ul>
+                        <p><strong>Precio por noche:</strong> $240</p>
+                        <a href="#" class="close-btn">Cerrar</a>
+                    </div>
+                </div>
+
+                <!-- Hotel 8 -->
+                <div class="hotel-card">
+                    <img src="imagenes/hoteles/hotel8.jpg" alt="Hotel 8">
+                    <div class="hotel-info">
+                        <h3>Historic Center Boutique Hotel</h3>
+                        <p class="location">Tunja, Colombia</p>
+                        <p class="price">$210 / noche</p>
+                        <a href="#popup8" class="btn ver-detalles-btn">Ver Detalles</a>
+                    </div>
+                </div>
+                <div id="popup8" class="popup">
+                    <div class="popup-content">
+                        <h2>Detalles del Historic Center Boutique Hotel</h2>
+                        <p>El Historic Center Boutique Hotel en Tunja ofrece una combinación perfecta de historia y confort moderno en el corazón de la ciudad.</p>
+                        <p><strong>Servicios ofrecidos:</strong></p>
+                        <ul>
+                            <li>Wi-Fi gratuito</li>
+                            <li>Restaurante de cocina local</li>
+                            <li>Excursiones históricas</li>
+                            <li>Centro de conferencias</li>
+                        </ul>
+                        <p><strong>Habitaciones:</strong></p>
+                        <ul>
+                            <li>Habitaciones con decoración histórica</li>
+                            <li>Suites de lujo</li>
+                            <li>Habitaciones familiares</li>
+                        </ul>
+                        <p><strong>Precio por noche:</strong> $210</p>
+                        <a href="#" class="close-btn">Cerrar</a>
+                    </div>
+                </div>
+
+                <!-- Hotel 9 -->
+                <div class="hotel-card">
+                    <img src="imagenes/hoteles/hotel9.jpg" alt="Hotel 9">
+                    <div class="hotel-info">
+                        <h3>Pacific Coastline Hotel</h3>
+                        <p class="location">Buenaventura, Colombia</p>
+                        <p class="price">$220 / noche</p>
+                        <a href="#popup9" class="btn ver-detalles-btn">Ver Detalles</a>
+                    </div>
+                </div>
+                <div id="popup9" class="popup">
+                    <div class="popup-content">
+                        <h2>Detalles del Pacific Coastline Hotel</h2>
+                        <p>El Pacific Coastline Hotel en Buenaventura ofrece vistas espectaculares al océano Pacífico y todas las comodidades para una estancia inolvidable.</p>
+                        <p><strong>Servicios ofrecidos:</strong></p>
+                        <ul>
+                            <li>Wi-Fi gratuito</li>
+                            <li>Acceso directo a la playa</li>
+                            <li>Piscina infinita</li>
+                            <li>Restaurante de mariscos</li>
+                            <li>Actividades acuáticas</li>
+                        </ul>
+                        <p><strong>Habitaciones:</strong></p>
+                        <ul>
+                            <li>Habitaciones con vista al mar</li>
+                            <li>Suites de lujo</li>
+                            <li>Habitaciones familiares</li>
+                        </ul>
+                        <p><strong>Precio por noche:</strong> $220</p>
+                        <a href="#" class="close-btn">Cerrar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h2>Sobre Nosotros</h2>
+                <p>Somos una empresa dedicada a ofrecer el mejor servicio de transporte público en el país, conectando ciudades y facilitando el viaje de nuestros usuarios.</p>
+            </div>
+            <div class="footer-section contact">
+                <h2>Contacto</h2>
+                <p>Teléfono: +57 123 456 7890</p>
+                <p>Email: info@transportepublico.com</p>
+                <p>Dirección: Calle 123, Ciudad, País</p>
+            </div>
+            <div class="footer-section social">
+                <h2>Redes Sociales</h2>
+                <div class="social-icons">
+                    <a href="#"><img src="imagenes/facebook.ico" alt="Facebook"></a>
+                    <a href="#"><img src="imagenes/twiter.ico" alt="Twitter"></a>
+                    <a href="#"><img src="imagenes/instagram.ico" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Sistema de Transporte Público. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="hoteles.js"></script>
+</body>
+</html>

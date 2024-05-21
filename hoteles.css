@@ -1,0 +1,224 @@
+/* Colores */
+:root {
+    --color-primario: #2c3e50;
+    --color-secundario: #34495e;
+    --color-fondo: #f4f4f4;
+    --color-texto: #2c3e50;
+    --color-texto-claro: #fff;
+    --color-texto-oscuro: #333;
+}
+
+/* Resetear estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--color-primario);
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo p {
+    color: var(--color-texto-claro);
+    font-size: 24px;
+}
+
+.navbar .menu a {
+    color: var(--color-texto-claro);
+    text-decoration: none;
+    padding: 8px 16px;
+    transition: background-color 0.3s;
+}
+
+.navbar .menu a:hover {
+    background-color: var(--color-secundario);
+    border-radius: 4px;
+}
+
+/* Lista de Hoteles */
+.hotel-list {
+    padding: 50px 0;
+    background-color: var(--color-fondo);
+}
+
+.hotel-list h2 {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    color: var(--color-texto);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Mostrar tres columnas en cada fila */
+    gap: 20px;
+    padding: 50px;
+}
+
+.hotel-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.hotel-card img {
+    width: 100%;
+    height: 60%;
+}
+
+.hotel-info {
+    padding: 20px;
+}
+
+.hotel-info h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.hotel-info p {
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.hotel-info .btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: var(--color-primario);
+    color: var(--color-texto-claro);
+    text-decoration: none;
+    padding: 10px 0;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.hotel-info .btn:hover {
+    background-color: var(--color-secundario);
+}
+
+/* Popups */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    overflow: auto;
+}
+
+.popup-content {
+    background-color: var(--color-texto-claro);
+    width: 80%;
+    max-width: 600px;
+    margin: 100px auto;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.popup-content h2 {
+    margin-top: 0;
+    font-size: 24px;
+    text-align: center;
+    color: var(--color-texto);
+}
+
+.popup-content p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.popup-content ul {
+    padding-left: 20px;
+}
+
+.popup-content ul li {
+    list-style-type: disc;
+    margin-bottom: 10px;
+}
+
+.close-btn {
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px 20px;
+    background-color: var(--color-primario);
+    color: var(--color-texto-claro);
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.close-btn:hover {
+    background-color: var(--color-secundario);
+}
+
+/* Footer */
+.footer {
+    background-color: var(--color-texto);
+    color: var(--color-texto-claro);
+    padding: 20px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-section h2 {
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: var(--color-texto-claro);
+}
+
+.footer-section .social-icons a {
+    margin: 0 10px;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid var(--color-texto-oscuro);
+}

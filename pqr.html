@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pqr.css">
+    <title>Sistema Público</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <p>Sistema de transporte público</p>
+        </div>
+        <div class="menu">  
+            <a href="inicio.html">Inicio</a>
+            <a href="ruta.html">Ruta</a>
+            <a href="flota.html">Flota</a>
+            <a href="contacto.html">Contactos</a>
+            <a href="#">PQR</a>
+        </div>
+    </div>
+
+<div class="container">
+    <h1>Formulario PQR</h1>
+    <h3>Tipo de Solicitud</h3>
+    <form id="pqrForm">
+        <label for="type"><h4>Seleccionar</h4></label>
+        <select id="type" name="type">
+            <option value="peticion">Peticion</option>
+            <option value="queja">Queja</option>
+            <option value="reclamo">Reclamo</option>
+        </select>
+        <h3>Datos Generales</h3>
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" requd>
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="name" name="name" requd>
+        <label for="documento"><h4>Documento de identidad*</h4></label>
+        <select id="type" name="type">
+            <option value="cedula">Cedula de Ciudadania</option>
+            <option value="documentoid">Documento de identidad</option>
+        </select> 
+        <input type="text" id="name" name="name" value="numero de documento ">
+        <h1></h1>
+        <input type="text" id="name" name="name" value="correo elelctronico">
+        <h1></h1>
+        <input type="text" id="name" name="name" value="telefono">
+        <h1></h1>
+        <input type="text" id="name" name="name" value="departamento">
+        <h1></h1>
+        <input type="text" id="name" name="name" value="municipio">
+        <h1></h1>
+        <input type="text" id="name" name="name" value="direccion">
+        <h1></h1>
+        <input type="text" id="name" name="name" value="profesion u oficio">
+        <h3>Descripcion de la Solicuitud</h3>
+        <textarea id="description" name="description" required>Escribe tu solicitud</textarea>
+        <button type="submit">Enviar</button>
+    </form>
+</div>
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section about">
+            <h2>Sobre Nosotros</h2>
+            <p>Somos una empresa dedicada a ofrecer el mejor servicio de transporte público en el país, conectando ciudades y facilitando el viaje de nuestros usuarios.</p>
+        </div>
+        <div class="footer-section contact">
+            <h2>Contacto</h2>
+            <p>Teléfono: +57 123 456 7890</p>
+            <p>Email: info@transportepublico.com</p>
+            <p>Dirección: Calle 123, Ciudad, País</p>
+        </div>
+        <div class="footer-section social">
+            <h2>Redes Sociales</h2>
+            <div class="social-icons">
+                <a href="#"><img src="imagenes/facebook.ico" alt="Facebook"></a>
+                <a href="#"><img src="imagenes/twiter.ico" alt="Twitter"></a>
+                <a href="#"><img src="imagenes/instagram.ico" alt="Instagram"></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Sistema de Transporte Público. Todos los derechos reservados.</p>
+    </div>
+</footer>
+</body>
+</html>
