@@ -12,7 +12,7 @@
             <p>Sistema de transporte público</p>
         </div>
         <div class="menu">
-            <a href="#">Inicio</a>
+            <a href="inicio.html">Inicio</a>
             <a href="ruta.html">Ruta</a>
             <a href="flota.html">Flota</a>
             <a href="contacto.html">Contactos</a>
@@ -22,10 +22,10 @@
 
     <div class="content">
         <div class="menu-icons">
-            <button class="icon-button">
+            <a href="tiques.html" class="icon-button">
                 <img src="imagenes/Tiquetes.ico" alt="Tiquetes">
                 <p>TIQUETES</p>
-            </button>
+            </a>
             <a href="hoteles.html" class="icon-button">
                 <img src="imagenes/hotel.ico" alt="Hoteles">
                 <p>HOTELES</p>
@@ -72,7 +72,48 @@
             <label>
                 <input type="checkbox"> Ver fechas más baratas
             </label>
-            <button type="button">Buscar</button>
+            <button type="button" onclick="mostrarVentanaEmergente()">Buscar</button>
+        </div>
+    </div>
+
+    <div id="ventanaEmergente" class="ventana-emergente">
+        <div class="ventana-contenido">
+            <span class="cerrar" onclick="cerrarVentanaEmergente()">&times;</span>
+            <h2>Puestos del BUS</h2>
+            <div class="bus-simulacion">
+               
+                <div class="fila">
+                    <div class="asiento">1 <button class="comprar">Comprar</button></div>
+                    <div class="asiento">2 <button class="comprar">Comprar</button></div>
+                    <div class="asiento">3 <button class="comprar">Comprar</button></div>
+                    <div class="asiento">4 <button class="comprar">Comprar</button></div>
+                </div>
+                <div class="fila">
+                    <div class="asiento">5 <button class="comprar">Comprar</button></div>
+                    <div class="asiento">6 <button class="comprar">Comprar</button></div>
+                    <div class="asiento">7 <button class="comprar">Comprar</button></div>
+                    <div class="asiento">8 <button class="comprar">Comprar</button></div>
+                </div>
+                <div class="fila">
+                    <div class="asiento">9 <button class="comprar">Comprar</button></div>
+                    <div class="asiento">10 <button class="comprar">Comprar</button></div>
+                    <div class="asiento">11 <button class="comprar">Comprar</button></div>
+                    <div class="asiento">12 <button class="comprar">Comprar</button></div>
+                </div>
+                <div class="fila">
+                    <div class="asiento">13 <button class="comprar">Comprar</button></div>
+                    <div class="asiento">14 <button class="comprar">Comprar</button></div>
+                    <div class="asiento">15 <button class="comprar">Comprar</button></div>
+                    <div class="asiento">16 <button class="comprar">Comprar</button></div>
+                </div>
+                <div class="fila">
+                    <div class="asiento">17 <button class="comprar">Comprar</button></div>
+                    <div class="asiento">18 <button class="comprar">Comprar</button></div>
+                    <div class="asiento">19 <button class="comprar">Comprar</button></div>
+                    <div class="asiento">20 <button class="comprar">Comprar</button></div>
+                </div>
+            
+            </div>
         </div>
     </div>
 
@@ -92,7 +133,7 @@
                 <h2>Redes Sociales</h2>
                 <div class="social-icons">
                     <a href="#"><img src="imagenes/facebook.ico" alt="Facebook"></a>
-                    <a href="#"><img src="imagenes/twiter.ico" alt="Twitter"></a>
+                    <a href="#"><img src="imagenes/twitter.ico" alt="Twitter"></a>
                     <a href="#"><img src="imagenes/instagram.ico" alt="Instagram"></a>
                 </div>
             </div>
@@ -101,5 +142,7 @@
             <p>&copy; 2024 Sistema de Transporte Público. Todos los derechos reservados.</p>
         </div>
     </footer>
+
+    <script src="boletos.js"></script>
 </body>
 </html>

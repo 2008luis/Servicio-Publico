@@ -1,50 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="ruta.css">
     <title>Ruta</title>
-    </head>
-    <body>
-        <div class="navbar">
-            <div class="logo">
-                <p>Sistema de transporte público</p>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <p>Sistema de Transporte Público</p>
+        </div>
+        <div class="menu">
+            <a href="inicio.html">Inicio</a>
+            <a href="ruta.html">Ruta</a>
+            <a href="flota.html">Flota</a>
+            <a href="contacto.html">Contactos</a>
+            <a href="pqr.html">PQR</a>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="selection-box">
+            <div>
+                <label for="inicio">Inicio:</label>
+                <select id="inicio">
+                    <option value="40.7128,-74.0060">Nueva York</option>
+                    <option value="34.0522,-118.2437">Los Ángeles</option>
+                    <option value="41.8781,-87.6298">Chicago</option>
+                </select>
             </div>
-            <div class="menu">
-                <a href="inicio.html">Inicio</a>
-                <a href="ruta.html">Ruta</a>
-                <a href="flota.html">Flota</a>
-                <a href="contacto.html" >Contactos</a>
-                <a href="pqr.html">PQR</a>
-
+            
+            <div>
+                <label for="destino">Destino:</label>
+                <select id="destino">
+                    <option value="34.0522,-118.2437">Los Ángeles</option>
+                    <option value="41.8781,-87.6298">Chicago</option>
+                    <option value="29.7604,-95.3698">Houston</option>
+                </select>
             </div>
         </div>
-    <div>
-        <label for="inicio">Inicio:</label>
-        <select id="inicio">
-            <option value="40.7128,-74.0060">Nueva York</option>
-            <option value="34.0522,-118.2437">Los Ángeles</option>
-            <option value="41.8781,-87.6298">Chicago</option>
-        </select>
-    </div>
-    
-    <div>
-        <label for="destino">Destino:</label>
-        <select id="destino">
-            <option value="34.0522,-118.2437">Los Ángeles</option>
-            <option value="41.8781,-87.6298">Chicago</option>
-            <option value="29.7604,-95.3698">Houston</option>
-        </select>
-    </div>
-    
-    <div>
-        <button onclick="calcularRuta()">Calcular Ruta</button>
-    </div>
-    
-    <div id="ruta"></div>
-    
-    <div id="mapa"></div>
+
+        <div class="img">
+            <img src="imagenes/FotoMapa.jpg" alt="Mapa del Ruta">
+        </div>
+    </div>    
 
     <footer class="footer">
         <div class="footer-content">
@@ -52,18 +52,19 @@
                 <h2>Sobre Nosotros</h2>
                 <p>Somos una empresa dedicada a ofrecer el mejor servicio de transporte público en el país, conectando ciudades y facilitando el viaje de nuestros usuarios.</p>
             </div>
-           
+            
             <div class="footer-section contact">
                 <h2>Contacto</h2>
                 <p>Teléfono: +57 123 456 7890</p>
                 <p>Email: info@transportepublico.com</p>
                 <p>Dirección: Calle 123, Ciudad, País</p>
             </div>
+            
             <div class="footer-section social">
                 <h2>Redes Sociales</h2>
                 <div class="social-icons">
                     <a href="#"><img src="imagenes/facebook.ico" alt="Facebook"></a>
-                    <a href="#"><img src="imagenes/twiter.ico" alt="Twitter"></a>
+                    <a href="#"><img src="imagenes/twitter.ico" alt="Twitter"></a>
                     <a href="#"><img src="imagenes/instagram.ico" alt="Instagram"></a>
                 </div>
             </div>
@@ -72,46 +73,5 @@
             <p>&copy; 2024 Sistema de Transporte Público. Todos los derechos reservados.</p>
         </div>
     </footer>
-    
-    <script>
-        var mapa;
-        function initMap() {
-            mapa = new google.maps.Map(document.getElementById('mapa'), {
-                center: {lat: 40.7128, lng: -74.0060},
-                zoom: 5
-            });
-        }
-    
-        function calcularRuta() {
-            var inicio = document.getElementById("inicio").value;
-            var destino = document.getElementById("destino").value;
-            
-            var inicioCoords = inicio.split(",");
-            var destinoCoords = destino.split(",");
-            
-            var directionsService = new google.maps.DirectionsService();
-            var directionsRenderer = new google.maps.DirectionsRenderer();
-            
-            directionsRenderer.setMap(mapa);
-            
-            var request = {
-                origin: {lat: parseFloat(inicioCoords[0]), lng: parseFloat(inicioCoords[1])},
-                destination: {lat: parseFloat(destinoCoords[0]), lng: parseFloat(destinoCoords[1])},
-                travelMode: 'DRIVING'
-            };
-            
-            directionsService.route(request, function(result, status) {
-                if (status == 'OK') {
-                    directionsRenderer.setDirections(result);
-                } else {
-                    alert('Ha ocurrido un error al calcular la ruta: ' + status);
-                }
-            });
-        }
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
-    
-    </body>
-    </html>
 </body>
 </html>
